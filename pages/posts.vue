@@ -6,9 +6,10 @@
 </template>
 
 <script setup>
-  const posts = ref( [] )
-  const fetchPosts = async () => {
-    posts.value = await $fetch( useRuntimeConfig().public.API_BASE_URL + '/posts' )
-  }
+  const {
+    posts,
+    fetchPosts
+  } = usePosts()
+
   await fetchPosts()
 </script>
