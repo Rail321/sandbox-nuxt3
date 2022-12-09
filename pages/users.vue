@@ -6,9 +6,10 @@
 </template>
 
 <script setup>
-  const users = ref( [] )
-  const fetchUsers = async () => {
-    users.value = await $fetch( 'https://jsonplaceholder.typicode.com/users' )
-  }
+  const {
+    users,
+    fetchUsers
+  } = useUsers()
+
   await fetchUsers()
 </script>

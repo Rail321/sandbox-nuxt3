@@ -23,9 +23,6 @@
     { path: '/', title: 'Start' },
     { path: '/posts', title: 'Posts' },
     { path: '/todos', title: 'Todos' },
-    { path: '/users', title: 'Users' },
-    { path: '/albums', title: 'Albums' },
-    { path: '/comments', title: 'Comments' },
-    { path: '/photos', title: 'Photos' }
+    { path: '/users', title: 'Users' }
   ] )
 </script>

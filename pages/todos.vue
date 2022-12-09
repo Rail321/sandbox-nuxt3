@@ -6,9 +6,10 @@
 </template>
 
 <script setup>
-  const todos = ref( [] )
-  const fetchTodos = async () => {
-    todos.value = await $fetch( useRuntimeConfig().public.API_BASE_URL + '/todos' )
-  }
+  const {
+    todos,
+    fetchTodos
+  } = useTodos()
+
   await fetchTodos()
 </script>
